@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AI School of India</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow glow-blue"></div>
+    <div class="bg-glow glow-pink"></div>
+
+    <div class="app">
+
+        <!-- =================================================
+             SIDEBAR
+             ================================================= -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+
+                <div class="logo-box">
+                    AI
+                </div>
+
+                <div>
+                    <div class="brand-name">
+                        AI School of India
+                    </div>
+
+                    <div class="brand-subtitle">
+                        Intelligent Assistant
+                    </div>
+                </div>
+
+            </div>
+
+
+            <button
+                id="newChatButton"
+                class="new-chat"
+            >
+                <span>＋</span>
+                New Chat
+            </button>
+
+
+            <div class="section-label">
+                RECENT CONVERSATIONS
+            </div>
+
+
+            <div
+                id="conversationList"
+                class="conversation-list"
+            ></div>
+
+
+            <div class="sidebar-footer">
+
+                <div class="connection">
+
+                    <span class="connection-dot"></span>
+
+                    <span>Groq AI Connected</span>
+
+                </div>
+
+                <div class="model-name">
+                    GPT-OSS 120B
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =================================================
+             MAIN
+             ================================================= -->
+
+        <main class="main">
+
+            <!-- TOP BAR -->
+
+            <header class="topbar">
+
+                <div class="top-status">
+
+                    <span class="live-dot"></span>
+
+                    SYSTEM ONLINE
+
+                </div>
+
+
+                <div class="top-title">
+                    AI SCHOOL OF INDIA
+                </div>
+
+
+                <button
+                    id="topNewChat"
+                    class="top-new-chat"
+                >
+                    + New Chat
+                </button>
+
+            </header>
+
+
+            <!-- =================================================
+                 CHAT CONTENT
+                 ================================================= -->
+
+            <section
+                id="chatArea"
+                class="chat-area"
+            >
+
+                <!-- WELCOME -->
+
+                <div
+                    id="welcomeScreen"
+                    class="welcome-screen"
+                >
+
+                    <div class="eyebrow">
+                        GENERATIVE AI ASSISTANT
+                    </div>
+
+
+                    <h1>
+                        What can I help you with?
+                    </h1>
+
+
+                    <p class="welcome-description">
+                        Learn, create, analyze and explore
+                        with your AI assistant.
+                    </p>
+
+
+                    <!-- FUTURISTIC FRAME -->
+
+                    <div class="hero-frame">
+
+                        <div class="corner top-left"></div>
+                        <div class="corner top-right"></div>
+                        <div class="corner bottom-left"></div>
+                        <div class="corner bottom-right"></div>
+
+
+                        <div class="frame-top-line">
+                            <span>AI CORE</span>
+                            <span>ACTIVE</span>
+                        </div>
+
+
+                        <div class="hero-visual">
+
+                            <div class="scan-line"></div>
+
+
+                            <div class="orbit orbit-a"></div>
+                            <div class="orbit orbit-b"></div>
+                            <div class="orbit orbit-c"></div>
+
+
+                            <div class="core">
+
+                                <div class="core-inner">
+                                    AI
+                                </div>
+
+                            </div>
+
+
+                            <div class="hud-left">
+                                <span>NEURAL</span>
+                                <span>ONLINE</span>
+                                <span>0.98</span>
+                            </div>
+
+
+                            <div class="hud-right">
+                                <span>MODEL</span>
+                                <span>GPT-OSS</span>
+                                <span>120B</span>
+                            </div>
+
+
+                            <div class="visual-caption">
+                                INTELLIGENCE CORE
+                            </div>
+
+                        </div>
+
+
+                        <div class="frame-bottom-line">
+
+                            <span>
+                                LANGUAGE: MULTI
+                            </span>
+
+                            <span>
+                                SECURE CONNECTION
+                            </span>
+
+                            <span>
+                                GROQ
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MESSAGES -->
+
+                <div
+                    id="messages"
+                    class="messages"
+                ></div>
+
+            </section>
+
+
+            <!-- =================================================
+                 COMPOSER
+                 ================================================= -->
+
+            <section class="composer-section">
+
+                <div class="composer-frame">
+
+                    <div class="composer-corner tl"></div>
+                    <div class="composer-corner tr"></div>
+                    <div class="composer-corner bl"></div>
+                    <div class="composer-corner br"></div>
+
+
+                    <textarea
+                        id="messageInput"
+                        rows="1"
+                        placeholder="Message AI School of India..."
+                        autocomplete="off"
+                    ></textarea>
+
+
+                    <button
+                        id="sendButton"
+                        title="Send message"
+                    >
+                        ↑
+                    </button>
+
+                </div>
+
+
+                <div class="composer-help">
+
+                    ENTER TO SEND
+
+                    <span>•</span>
+
+                    SHIFT + ENTER FOR NEW LINE
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script
+        src="{{ url_for('static', filename='script.js') }}"
+    ></script>
+
+</body>
+
+</html>
